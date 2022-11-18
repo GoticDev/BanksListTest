@@ -128,8 +128,7 @@
 		BA6CAA8829274AF700B828D2 /* DetailBank */ = {
 			isa = PBXGroup;
 			children = (
-				BA6EF02D29272E1B009DD3F9 /* DetailBankViewController.swift */,
-				BA6EF02E29272E1C009DD3F9 /* DetailBankViewController.xib */,
+				BA6CAA942927A81000B828D2 /* View */,
 			);
 			path = DetailBank;
 			sourceTree = "<group>";
@@ -161,6 +160,49 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BA6CAA902927A78100B828D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA6CAA8E292753FF00B828D2 /* Constants.swift */,
+				BA6EF0022927281B009DD3F9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA6CAA912927A79700B828D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BA6EF0042927281B009DD3F9 /* LaunchScreen.storyboard */,
+				BA6EEFF629272816009DD3F9 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BA6CAA922927A7AF00B828D2 /* BankListCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BA6EEFFF29272817009DD3F9 /* BanksListTest.xcdatamodeld */,
+			);
+			path = BankListCoreData;
+			sourceTree = "<group>";
+		};
+		BA6CAA932927A7DD00B828D2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BA6EF03929272FF9009DD3F9 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BA6CAA942927A81000B828D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA6EF02D29272E1B009DD3F9 /* DetailBankViewController.swift */,
+				BA6EF02E29272E1C009DD3F9 /* DetailBankViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BA6EEFEA29272816009DD3F9 = {
 			isa = PBXGroup;
 			children = (
@@ -186,17 +228,15 @@
 		BA6EEFF529272816009DD3F9 /* BanksListTest */ = {
 			isa = PBXGroup;
 			children = (
-				BA6EEFF629272816009DD3F9 /* AppDelegate.swift */,
-				BA6EF03929272FF9009DD3F9 /* NetworkManager.swift */,
-				BA6CAA8E292753FF00B828D2 /* Constants.swift */,
+				BA6EF0072927281B009DD3F9 /* Info.plist */,
+				BA6CAA912927A79700B828D2 /* Main */,
+				BA6CAA932927A7DD00B828D2 /* Networking */,
 				BA6EF03E292731A1009DD3F9 /* Services */,
 				BA6EF03B29273067009DD3F9 /* Extensions */,
 				BA6EF03429272F9F009DD3F9 /* BanksList */,
 				BA6CAA8829274AF700B828D2 /* DetailBank */,
-				BA6EF0022927281B009DD3F9 /* Assets.xcassets */,
-				BA6EF0042927281B009DD3F9 /* LaunchScreen.storyboard */,
-				BA6EF0072927281B009DD3F9 /* Info.plist */,
-				BA6EEFFF29272817009DD3F9 /* BanksListTest.xcdatamodeld */,
+				BA6CAA902927A78100B828D2 /* Resources */,
+				BA6CAA922927A7AF00B828D2 /* BankListCoreData */,
 			);
 			path = BanksListTest;
 			sourceTree = "<group>";
