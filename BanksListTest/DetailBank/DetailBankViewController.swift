@@ -27,6 +27,7 @@ class DetailBankViewController: UIViewController {
         descriptionLabel.text = bankData.bankDescription
         ageLabel.text = String(bankData.bankAge)
         bankImage.imageFromUrl(urlString: bankData.bankUrl ?? "", placeHolderImage: UIImage(named: "errorImg")!)
+        
     }
 
 }

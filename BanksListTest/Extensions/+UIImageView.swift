@@ -41,18 +41,20 @@ extension UIImageView {
         DispatchQueue.main.async {
             activityIndicator.startAnimating()
         }
-        
+        guard urlString != "" else {
+            DispatchQueue.main.async {
+                activityIndicator.stopAnimating()
+                self.image = placeHolderImage
+            }
+            return }
         URLSession.shared.dataTask(with: URL(string: urlString)!) { (data, response, error)in
             DispatchQueue.main.async {
                 activityIndicator.stopAnimating()
                 
                 if error != nil {
+                    self.image = placeHolderImage
                     return
-                } else {
-                    if self.image == nil {
-                        self.image = placeHolderImage
-                    }
-                }
+                } 
             }
             
             DispatchQueue.main.async {
